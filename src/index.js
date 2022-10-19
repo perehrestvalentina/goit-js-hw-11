@@ -15,7 +15,7 @@ loadRef.classList.add('is-hidden');
 async function onSearch(e) {
     e.preventDefault();
 
-    searchQuery = e.currentTarget.elements.searchQuery.value.trim().toLowerCase();
+    const searchQuery = e.currentTarget.elements.searchQuery.value.trim().toLowerCase();
 
   if (!searchQuery) {    
     Notiflix.Notify.failure('Enter a search query!');
